@@ -1,4 +1,10 @@
 
+<div class="row mt-4" *ngIf="accountCounter>0 && accountInfos.length==0">
+    <p class="text-center text-info">
+        Please wait ...
+    </p>
+</div>
+
 <div class="row"  *ngIf="accountInfos.length>0">
     <p-table
     [value]="accountInfos"

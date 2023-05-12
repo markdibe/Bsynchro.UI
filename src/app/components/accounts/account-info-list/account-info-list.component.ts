@@ -17,7 +17,10 @@ export class AccountInfoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.countAccounts();
-    this.getaccountInformations();
+    setTimeout(()=>{
+      this.getaccountInformations();
+    },1000)
+    
     
   }
 
